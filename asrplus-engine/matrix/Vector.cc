@@ -371,7 +371,7 @@ void Vector::CopyFromVec(const Vector& v){
 void Vector::CopyFromVecRange(const Vector& v){
 
 	  if (data_ != v.data_){
-	  	memcpy(this->data_, v.data_, dim_ * sizeof(BaseFloat));
+	  	memcpy(this->data_, v.data_, v.Dim() * sizeof(BaseFloat));
 	  }
 }
 
